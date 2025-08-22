@@ -1,0 +1,279 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  background-color: #ECEFF4;
+}
+
+/* ================== NAVBAR ================== */
+.scrolled {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+}
+
+a.navbar-brand {
+  font-weight: bolder;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #333 !important;
+}
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+.navbar-nav .nav-link.active {
+  color: #FFEF9F !important;
+}
+
+.nav-link:active {
+  color: #333 !important;
+}
+
+/* ================== HERO ================== */
+.hero-section {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-text {
+  width: 100%;
+  padding: 30px;
+}
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.hero-text h1 span {
+  color: #157FFE;
+}
+.hero-text h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.subheading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #157FFE;
+}
+
+#typing-animation {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.hero-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #157FFE;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 5px 10px rgb(122.5659574468, 182.5574468085, 254.4340425532);
+  transition: background-color 0.3s;
+}
+.hero-btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.hero-btn:hover {
+  background-color: #333;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+/* ================== ABOUT SECTION ================== */
+.about-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 5% !important;
+}
+
+.about-skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-image {
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.about-text span {
+  color: #157FFE;
+}
+
+.about-me {
+  padding: 20px;
+  position: relative;
+  z-index: 100;
+}
+.about-me h1 {
+  color: #157FFE;
+  font-weight: bold;
+}
+.about-me p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ================== SKILLS SECTION ================== */
+.skill-mf {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
+}
+.skill-mf .title-s {
+  font-size: 24px;
+  font-weight: bold;
+  color: #157FFE;
+  margin-bottom: 20px;
+  border-left: 4px solid #157FFE;
+  padding-left: 10px;
+}
+.skill-mf span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 10px;
+}
+.skill-mf .pull-right {
+  float: right;
+  color: #157FFE;
+  font-weight: 600;
+}
+.skill-mf .progress {
+  height: 10px;
+  border-radius: 50px;
+  background-color: #e9ecef;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  width: 0%;
+  transition: width 1.2s ease-in-out;
+  background: linear-gradient(to right, #157FFE, #69c7ff);
+}
+
+/* ================== PROFILE CONTENT ================== */
+.profile-content {
+  max-width: 100%;
+  width: 100%;
+  margin: 5px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+.profile-content ul {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  border-left: 3px solid #157FFE;
+  background: #f9f9f9;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.profile-content ul:hover {
+  background-color: #eef5ff;
+  transform: translateY(-1px);
+}
+.profile-content ul li.heading {
+  font-weight: 600;
+  font-size: 16px;
+  color: #157FFE;
+  margin-bottom: 4px;
+}
+.profile-content ul li:not(.heading) {
+  font-size: 14px;
+  color: #333;
+  margin-top: 2px;
+}
+.profile-content ul li:not(.heading)::before {
+  content: "★";
+  color: #157FFE;
+  margin-right: 6px;
+  font-size: 12px;
+}
+
+/* ================== RESUME ================== */
+.Resuem-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 5% !important;
+}
+
+.Resume-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #157FFE;
+}
+
+.Experience-line {
+  height: 10px;
+  border-radius: 5px;
+  transition: width 1.2s ease-in-out;
+  background: linear-gradient(to right, #157FFE, #69c7ff);
+}
+
+.card-heading {
+  color: #157FFE !important;
+  font-weight: bold;
+}
+
+.card-subtitle {
+  font-weight: bold;
+}
+
+.card-text,
+.card-body ul li,
+.Resume-text {
+  color: #333;
+  font-size: 18px !important;
+}
+
+/*# sourceMappingURL=style.css.map */

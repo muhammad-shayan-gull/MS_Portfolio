@@ -1,0 +1,66 @@
+
+@media (max-width: 768px) {
+  /* Your styles here */
+
+  .hero-image {
+    display: none !important;
+  }
+  a.navbar-brand{
+    font-size: 1.3rem!important;
+  }
+
+  #typing-animation {
+    font-size: 1.5rem !important;
+  }
+
+.hero-section .hero-text {
+    width: 100%;
+    padding: 30px;
+}
+
+
+.about-skills{
+    flex-direction: column;
+}
+
+.hero-text h1{
+    font-size: 3rem !important;
+}
+.project-hover-image{
+  
+    bottom: -2% !important;
+    width: 250px !important;
+}
+.project-hover-image,img{
+  width: 250px !important;
+}
+
+}
+
+/* Apply styles only on screens wider than 1200px */
+@media (min-width: 1200px) {
+  /* Your CSS here */
+
+  
+.my-acchievements-box{
+ position: relative;
+ z-index: 5;
+ width: 100%;
+ height: 100px;}
+
+.box-content{
+   position: absolute;
+   bottom: -80px;
+   width: 100%;}
+
+}
+
+
+
+@media (max-width: 480px) {
+  .hero-btn-container {
+    flex-direction: column !important;
+    gap: 15px !important;
+    align-items: stretch !important;
+  }
+}

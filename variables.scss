@@ -1,0 +1,18 @@
+// variables.scss
+:root {
+  --primary-color: #157FFE;  // This is the ONLY variable JS will change
+}
+
+// Keep your existing SCSS variables (others stay static)
+$primary-color: var(--primary-color); // Now linked to CSS variable
+$secondary-color: #69c7ff;
+$highlight-color: #FFEF9F;
+$text-color: #fff;
+$light-color: #f8f9fa;
+$bg-color: #011239;
+$white: #ffffff;
+$shadow-light: rgba(0, 0, 0, 0.08);
+$shadow-dark: rgba(0, 0, 0, 0.2);
+
+$font-primary: 'Segoe UI', sans-serif;
+$font-secondary: Arial, Helvetica, sans-serif;
