@@ -505,6 +505,35 @@ span {
 
 /* ============================================================== RESUME ========================================================= */
 
+// box sahdow smokey
+.smokey-shadow {
+  background: #fff;
+  border-radius: 16px;
+  position: relative;
+  box-shadow:
+    0 4px 12px  $primary-color,  // main shadow
+    0 0 20px $primary-color;    // soft outer glow
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    border-radius: 20px;
+    pointer-events: none;
+    filter: blur(12px);
+    z-index: 0;
+    animation: smokeGlow 6s ease-in-out infinite;
+      // optional subtle glow
+  }
+}
+
+@keyframes smokeGlow {
+  0%, 100% { opacity: 0.6; filter: blur(12px); }
+  50% { opacity: 0.9; filter: blur(18px); }
+}
+
+
+
   // fade animation 
   .fade-slide {
   opacity: 0;
@@ -666,7 +695,9 @@ span {
     background: #fff;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    box-shadow:
+    0 4px 12px  $primary-color,  // main shadow
+    0 0 20px $primary-color;    // soft outer glow
     transition: transform 0.3s ease-in-out;
 
     &:hover {
