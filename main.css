@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-  --primary-color: #157FFE;
+  --primary-color:#eb5e28ff ;
 }
 
 * {
@@ -17,7 +17,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  background-color: #011239 !important;
+  background-color: #fffcf2;
 }
 
 .navbar {
@@ -87,7 +87,7 @@ a.navbar-brand {
 }
 
 .nav-link:active {
-  color: #fff !important;
+  color: #252422 !important;
 }
 
 #scroll-progress {
@@ -129,14 +129,14 @@ a.navbar-brand {
 .hero-section .hero-text h1 {
   font-size: 4rem;
   font-weight: bold;
-  color: #fff;
+  color: #252422;
 }
 .hero-section .hero-text h1 span {
   color: var(--primary-color);
 }
 .hero-section .hero-text h2 {
   font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
+  color: #252422;
 }
 .hero-section .subheading {
   font-size: 20px;
@@ -145,7 +145,7 @@ a.navbar-brand {
 }
 .hero-section #typing-animation {
   font-size: 2rem;
-  color: #fff;
+  color: #252422;
   font-weight: bold;
   font-family: Arial;
   -webkit-text-decoration: underline var(--primary-color);
@@ -157,8 +157,8 @@ a.navbar-brand {
 }
 .hero-section .hero-image .blob-wrapper {
   position: relative;
-  width: 650px;
-  height: 560px;
+  width: 600px;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -327,7 +327,7 @@ a.navbar-brand {
 }
 
 .about-text {
-  color: #fff;
+  color: #252422;
 }
 .about-text span {
   color: var(--primary-color);
@@ -344,13 +344,13 @@ a.navbar-brand {
 }
 .about-me p {
   font-size: 18px;
-  color: #fff;
+  color: #252422;
   font-weight: 500;
 }
 
 /* ================== SKILLS SECTION ================== */
 .skill-mf {
-  background: #f8f9fa;
+  background-color: #CCC5B9;
   padding: 30px;
   border-radius: 10px;
   max-width: 600px;
@@ -402,7 +402,7 @@ a.navbar-brand {
   border-radius: 14px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   font-family: "Segoe UI", sans-serif;
-  color: #fff;
+  color: #252422;
   line-height: 1.6;
   box-sizing: border-box;
 }
@@ -440,7 +440,6 @@ a.navbar-brand {
 
 /* ============================================================== RESUME ========================================================= */
 .smokey-shadow {
-  background: #fff;
   border-radius: 16px;
   position: relative;
   box-shadow: 0 4px 12px var(--primary-color), 0 0 20px var(--primary-color);
@@ -525,10 +524,11 @@ a.navbar-brand {
 .card-body ul li {
   color: #333;
   font-size: 18px !important;
+  background-color: #CCC5B9;
 }
 
 .Resume-text {
-  color: #fff !important;
+  color: #252422 !important;
   font-size: 18px !important;
 }
 
@@ -540,7 +540,7 @@ a.navbar-brand {
   position: relative;
   padding: 2rem;
   border: 1px solid #dee2e6;
-  background: #fff;
+  background-color: #CCC5B9;
   transition: all 0.3s ease;
   overflow: visible;
   border-radius: 5px;
@@ -673,12 +673,12 @@ a.navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #fff;
+  color: #252422;
   margin-top: 1rem;
 }
 .contact-section p, .contact-section a {
   font-size: 1.2rem;
-  color: #fff;
+  color: #252422;
   font-weight: 500;
 }
 
@@ -701,7 +701,7 @@ a.navbar-brand {
 .have-qustion h2 {
   font-size: 2.3rem;
   font-weight: bold;
-  color: #fff;
+  color: #252422;
 }
 @media (max-width: 480px) {
   .have-qustion h2 {
