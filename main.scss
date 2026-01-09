@@ -1,5 +1,6 @@
 @import 'variables';
 
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +15,7 @@ body {
 .main-container {
   width: 100%;
   height: 100%;
+  background-color: $bg-color;
 
 }
 
@@ -160,9 +162,11 @@ a.navbar-brand {
   }
 
   .hero-image {
-    background-color: #000;
-    /* Remove the fixed width so Bootstrap controls it */
-    width: 50% !important;
+        
+
+       
+      width: 50%;
+    
   }
 }
 
@@ -243,11 +247,12 @@ a.navbar-brand {
   padding: 20px;
 }
 
-.about-image {
-  background-color: black;
+.about-image  img {
+
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  border: 5px solid var(--primary-color);
 }
 
 .about-text{

@@ -16,6 +16,7 @@ body {
 .main-container {
   width: 100%;
   height: 100%;
+  background-color: #011239;
 }
 
 .navbar {
@@ -140,9 +141,7 @@ a.navbar-brand {
           text-decoration: underline var(--primary-color);
 }
 .hero-section .hero-image {
-  background-color: #000;
-  /* Remove the fixed width so Bootstrap controls it */
-  width: 50% !important;
+  width: 50%;
 }
 
 .hero-btn {
@@ -214,11 +213,11 @@ a.navbar-brand {
   padding: 20px;
 }
 
-.about-image {
-  background-color: black;
+.about-image img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  border: 5px solid var(--primary-color);
 }
 
 .about-text {

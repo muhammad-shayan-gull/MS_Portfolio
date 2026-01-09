@@ -9,7 +9,7 @@
       // Create an array of typing text
       const typingTexts = [
         "Software Engineer",
-        "Frontend Developer",
+        "Front-end Developer",
         "React Developer",
         "JavaScript Developer",
         "TypeScript Developer"
@@ -67,18 +67,19 @@
   // Also run once in case it's already in view
   animateBars();
 
-
-
-
-  //  nav bar js 
+// navbar script to skick to top
+document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", function () {
-  const navbar = document.getElementById("Navbar");
-  if (window.scrollY > 20) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
+    const navbar = document.getElementById("Navbar");
+    if (window.scrollY > 20) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
 });
+
+
 
 
 // js for the thems in protfolio
@@ -103,8 +104,13 @@
     });
   });
 
+// thems code end here 
 
-  // the acchivment js 
+
+
+
+
+  // the acchivment js  
   
   // Detect when the counters enter the viewport
 function animateCounter(element, endValue, duration = 2000) {
@@ -252,4 +258,37 @@ function animateBoxesOnScroll() {
 
 window.addEventListener('scroll', animateBoxesOnScroll);
 window.addEventListener('load', animateBoxesOnScroll);
+
+ // 3D Tilt Effect
+    const card = document.querySelector(".blob-card");
+    card.addEventListener("mousemove", (e) => {
+      const { left, top, width, height } = card.getBoundingClientRect();
+      const x = e.clientX - left;
+      const y = e.clientY - top;
+      const rotateX = ((y / height) - 0.5) * 20;
+      const rotateY = ((x / width) - 0.5) * 20;
+      card.style.transform = `rotateX(${ -rotateX }deg) rotateY(${ rotateY }deg) scale(1.05)`;
+    });
+    card.addEventListener("mouseleave", () => {
+      card.style.transform = "rotateX(0) rotateY(0) scale(1)";
+    });
+
+
+// send sendWhatsApp Message  to me 
+
+    function sendWhatsAppMessage() {
+    const phoneNumber = "+923313420181"; // ✅ country code + number, no '+' or '00'
+    const message = "Hi Muhammad Shayan...";
+
+    // Encode message safely for URL
+    const encodedMessage = encodeURIComponent(message);
+
+    // WhatsApp API link
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+    // Open in a new tab/window
+    window.open(whatsappUrl, "_blank");
+}
+
+
 
